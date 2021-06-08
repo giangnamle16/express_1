@@ -1,0 +1,21 @@
+extends ../../layouts/common.pug
+block content
+    .container.col-6
+        form.text-center
+            img.img-thumbnail.mb-4(src="/img/logo.png" alt="" width="100" height="120")
+            h1.h3.mb-3.fw-normal Please sign in
+            .form-floating
+                input#floatingInput.form-control(type='email' placeholder='name@example.com')
+                label(for='floatingInput') Email address
+            .form-floating
+                input#floatingPassword.form-control(type='password' placeholder='Password')
+                label(for='floatingPassword') Password
+        .checkbox.mb-3
+            label
+            input(type='checkbox' value='remember-me')
+            | Remember me
+        button.w-100.btn.btn-lg.btn-primary(type='submit') Sign in
+        form.text-center
+            p.mt-5.mb-3.text-muted &copy; 2017–2021
+
+        
